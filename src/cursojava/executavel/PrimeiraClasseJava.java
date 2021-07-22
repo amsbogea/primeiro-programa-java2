@@ -41,20 +41,11 @@ public class PrimeiraClasseJava {
 		aluno1.setNota4(Double.parseDouble(note4));
 
 		System.out.println("===================================================");
-		System.out.println("Nome do aluno1 : " + aluno1.getNome());
-		System.out.println("Idade do aluno1 : " + aluno1.getIdade());
-		System.out.println("Data de nascimento do aluno1 : " + aluno1.getDataNascimento());
-		System.out.println("RG do aluno1 : " + aluno1.getRegistroGeral());
-		System.out.println("CPF do aluno1 : " + aluno1.getNumeroCpf());
-		System.out.println("Nome da mae do aluno1 : " + aluno1.getNomeMae());
-		System.out.println("Nome do pai do aluno1 : " + aluno1.getNomePai());
-		System.out.println("Data de matricula do aluno1 : " + aluno1.getDataMatricula());
-		System.out.println("Nome da escola do aluno1 : " + aluno1.getNomeEscola());
-		System.out.println("serie do aluno1 : " + aluno1.getSerieMatriculado());
-		System.out.println("Média do aluno1 : " + aluno1.getMediaNota());
-		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		System.out.println("Resultado 2 " + aluno1.getAlunoAprovado2());
-
+		
+		System.out.println(aluno1);
+		System.out.println("média do Aluno " + aluno1.getMediaNota());
+		System.out.println("Resultado = " + aluno1.getAlunoAprovado2());
+		
 		System.out.println("===================================================");
 		/*
 		 * =============================================================================
