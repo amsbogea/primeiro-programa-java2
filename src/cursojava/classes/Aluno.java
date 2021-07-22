@@ -156,7 +156,7 @@ public class Aluno {
 	/* Este metodo usa bolean, verifica se o aluno está aprovado ou reprovado */
 	public boolean getAlunoAprovado() {
 		double media = this.getMediaNota();
-		if (media >= 70) {
+		if (media >= 7) {
 			return true;
 		} else {
 			return false;
@@ -167,7 +167,7 @@ public class Aluno {
 	/* Este metodo usa String, verifica se o aluno está aprovado ou reprovado */
 	public String getAlunoAprovado2() {
 		double media = this.getMediaNota();
-		if (media >= 70) {
+		if (media >= 7) {
 			return "Aluno está aprovado";
 		} else {
 			return "Aluno está reprovado";
