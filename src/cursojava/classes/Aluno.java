@@ -147,9 +147,31 @@ public class Aluno {
 	public void setNota4(double nota4) {
 		this.nota4 = nota4;
 	}
-	
+
+	/* Este metodo faz o calculo das notas e retorna a media do aluno */
 	public double getMediaNota() {
 		return (nota1 + nota2 + nota3 + nota4) / 4;
 	}
 
+	/* Este metodo usa bolean, verifica se o aluno está aprovado ou reprovado */
+	public boolean getAlunoAprovado() {
+		double media = this.getMediaNota();
+		if (media >= 70) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+
+	/* Este metodo usa String, verifica se o aluno está aprovado ou reprovado */
+	public String getAlunoAprovado2() {
+		double media = this.getMediaNota();
+		if (media >= 70) {
+			return "Aluno está aprovado";
+		} else {
+			return "Aluno está reprovado";
+		}
+
+	}
 }

@@ -33,7 +33,9 @@ public class PrimeiraClasseJava {
 		System.out.println("Data de matricula do aluno1 : " + aluno1.getDataMatricula());
 		System.out.println("Nome da escola do aluno1 : " + aluno1.getNomeEscola());
 		System.out.println("serie do aluno1 : " + aluno1.getSerieMatriculado());
-		System.out.println("Média do aluno1 : " + aluno1.getMediaNota());
+		System.out.println("Mï¿½dia do aluno1 : " + aluno1.getMediaNota());
+		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Resultado 2 " + aluno1.getAlunoAprovado2());
 
 		System.out.println("===================================================");
 		/*
@@ -53,17 +55,24 @@ public class PrimeiraClasseJava {
 		aluno2.setDataMatricula("17/10/2008");
 		aluno2.setNomeEscola("JDev Escola");
 		aluno2.setSerieMatriculado("Java WEB");
+		aluno2.setNota1(60.5);
+		aluno2.setNota2(50.3);
+		aluno2.setNota3(70.8);
+		aluno2.setNota4(64.6);
 
-		System.out.println("Nome do aluno2 é: " + aluno2.getNome());
-		System.out.println("Idade do aluno2 é: " + aluno2.getIdade());
-		System.out.println("Data de nascimento do aluno2 é: " + aluno2.getDataNascimento());
-		System.out.println("RG do aluno2 é: " + aluno2.getRegistroGeral());
-		System.out.println("CPF do aluno2 é: " + aluno2.getNumeroCpf());
-		System.out.println("Nome da mÃ£e do aluno2 é: " + aluno2.getNomeMae());
-		System.out.println("Nome do pai do aluno2 é: " + aluno2.getNomePai());
-		System.out.println("Data de matricula do aluno2 é: " + aluno2.getDataMatricula());
-		System.out.println("Nome da escola do aluno2 é: " + aluno2.getNomeEscola());
-		System.out.println("serie do aluno2 é: " + aluno2.getSerieMatriculado());
+		System.out.println("Nome do aluno2 ï¿½: " + aluno2.getNome());
+		System.out.println("Idade do aluno2 ï¿½: " + aluno2.getIdade());
+		System.out.println("Data de nascimento do aluno2 ï¿½: " + aluno2.getDataNascimento());
+		System.out.println("RG do aluno2 ï¿½: " + aluno2.getRegistroGeral());
+		System.out.println("CPF do aluno2 ï¿½: " + aluno2.getNumeroCpf());
+		System.out.println("Nome da mÃ£e do aluno2 ï¿½: " + aluno2.getNomeMae());
+		System.out.println("Nome do pai do aluno2 ï¿½: " + aluno2.getNomePai());
+		System.out.println("Data de matricula do aluno2 ï¿½: " + aluno2.getDataMatricula());
+		System.out.println("Nome da escola do aluno2 ï¿½: " + aluno2.getNomeEscola());
+		System.out.println("serie do aluno2 ï¿½: " + aluno2.getSerieMatriculado());
+		System.out.println("Mï¿½dia do aluno2 : " + aluno2.getMediaNota());
+		System.out.println("Resultado = " + (aluno2.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Resultado 2 " + aluno2.getAlunoAprovado2());
 
 		System.out.println("===================================================");
 		/*
@@ -75,7 +84,7 @@ public class PrimeiraClasseJava {
 
 		Aluno aluno4 = new Aluno("Maria");
 
-		Aluno aluno5 = new Aluno("José", 50);
+		Aluno aluno5 = new Aluno("Josï¿½", 50);
 
 		/*
 		 * System.out.println("Nome do aluno5 Ã©: " + aluno5.nome);
