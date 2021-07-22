@@ -18,12 +18,16 @@ public class PrimeiraClasseJava {
 		String matricula = JOptionPane.showInputDialog("Data de matrícula do aluno");
 		String escola = JOptionPane.showInputDialog("Nome da escola do aluno");
 		String serie = JOptionPane.showInputDialog("Série do aluno");
+		String disciplina1 = JOptionPane.showInputDialog("Disciplina1");
 		String note1 = JOptionPane.showInputDialog("Digite a nota 1");
+		String disciplina2 = JOptionPane.showInputDialog("Disciplina2");
 		String note2 = JOptionPane.showInputDialog("Digite a nota 2");
+		String disciplina3 = JOptionPane.showInputDialog("Disciplina3");
 		String note3 = JOptionPane.showInputDialog("Digite a nota 3");
+		String disciplina4 = JOptionPane.showInputDialog("Disciplina4");
 		String note4 = JOptionPane.showInputDialog("Digite a nota 4");
 
-		Aluno aluno1 = new Aluno(); // aqui sera o Joao
+		Aluno aluno1 = new Aluno();
 
 		aluno1.setNome(nome);
 		aluno1.setIdade(Integer.valueOf(idade));
@@ -36,10 +40,14 @@ public class PrimeiraClasseJava {
 		aluno1.setNomeEscola(escola);
 		aluno1.setSerieMatriculado(serie);
 		aluno1.setNota1(Double.parseDouble(note1));
+		aluno1.setDisciplina1(disciplina1);
 		aluno1.setNota2(Double.parseDouble(note2));
+		aluno1.setDisciplina2(disciplina2);
 		aluno1.setNota3(Double.parseDouble(note3));
+		aluno1.setDisciplina3(disciplina3);
 		aluno1.setNota4(Double.parseDouble(note4));
-
+		aluno1.setDisciplina4(disciplina4);
+		
 		System.out.println("===================================================");
 		
 		System.out.println(aluno1);
