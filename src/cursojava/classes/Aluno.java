@@ -1,5 +1,7 @@
 package cursojava.classes;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /*Está é a nossa classe / objeto que representa o Aluno*/
@@ -16,15 +18,17 @@ public class Aluno {
 	private String nomeEscola;
 	private String serieMatriculado;
 	
-	private Disciplina disciplina = new Disciplina();
+	private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
 	
-	public void setDisciplina(Disciplina disciplina) {
-		this.disciplina = disciplina;
+	public void setDisciplinas(List<Disciplina> disciplinas) {
+		this.disciplinas = disciplinas;
 	}
 	
-	public Disciplina getDisciplina() {
-		return disciplina;
+	public List<Disciplina> getDisciplinas() {
+		return disciplinas;
 	}
+	
+	
 
 	public Aluno() { // Isso é um contrutor, cria dados na memória - sendo padrão do Java
 
@@ -126,7 +130,7 @@ public class Aluno {
 
 	/* Este metodo faz o calculo das notas e retorna a media do aluno */
 	public double getMediaNota() {
-		return ( disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4()) / 4;
+		return 0;
 	}
 
 	/* Este metodo usa bolean, verifica se o aluno está aprovado ou reprovado */
@@ -135,7 +139,7 @@ public class Aluno {
 		if (media >= 7) {
 			return true;
 		} else {
-			return false;
+			return false;	
 		}
 
 	}
@@ -151,13 +155,17 @@ public class Aluno {
 
 	}
 
+	
 	@Override
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
 				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + "]";
+				+ serieMatriculado + ", disciplinas=" + disciplinas + "]";
 	}
+
+
+
 
 	@Override
 	public int hashCode() {
