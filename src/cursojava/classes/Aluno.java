@@ -130,7 +130,14 @@ public class Aluno {
 
 	/* Este metodo faz o calculo das notas e retorna a media do aluno */
 	public double getMediaNota() {
-		return 0;
+		
+		double somaNotas = 0.0;
+		
+		for (Disciplina disciplina : disciplinas) {
+			somaNotas += disciplina.getNota();
+		}
+		
+		return (somaNotas) / disciplinas.size();
 	}
 
 	/* Este metodo usa bolean, verifica se o aluno está aprovado ou reprovado */
