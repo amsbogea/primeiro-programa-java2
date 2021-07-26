@@ -17,18 +17,16 @@ public class Aluno {
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
-	
+
 	private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
-	
+
 	public void setDisciplinas(List<Disciplina> disciplinas) {
 		this.disciplinas = disciplinas;
 	}
-	
+
 	public List<Disciplina> getDisciplinas() {
 		return disciplinas;
 	}
-	
-	
 
 	public Aluno() { // Isso é um contrutor, cria dados na memória - sendo padrão do Java
 
@@ -130,23 +128,23 @@ public class Aluno {
 
 	/* Este metodo faz o calculo das notas e retorna a media do aluno */
 	public double getMediaNota() {
-		
+
 		double somaNotas = 0.0;
-		
+
 		for (Disciplina disciplina : disciplinas) {
 			somaNotas += disciplina.getNota();
 		}
-		
+
 		return (somaNotas) / disciplinas.size();
 	}
 
 	/* Este metodo usa bolean, verifica se o aluno está aprovado ou reprovado */
 	public boolean getAlunoAprovado() {
 		double media = this.getMediaNota();
-		if (media >= 7) {
+		if (media >= 70) {
 			return true;
 		} else {
-			return false;	
+			return false;
 		}
 
 	}
@@ -154,15 +152,18 @@ public class Aluno {
 	/* Este metodo usa String, verifica se o aluno está aprovado ou reprovado */
 	public String getAlunoAprovado2() {
 		double media = this.getMediaNota();
-		if (media >= 7) {
-			return "Aluno está aprovado";
+		if (media >= 50) {
+			if (media >= 70) {
+				return "Aluno está aprovado!";
+			} else {
+				return "Aluno está em recuperação!";
+			}
 		} else {
-			return "Aluno está reprovado";
+			return "Aluno está reprovado :(";
 		}
 
 	}
 
-	
 	@Override
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
@@ -170,9 +171,6 @@ public class Aluno {
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
 				+ serieMatriculado + ", disciplinas=" + disciplinas + "]";
 	}
-
-
-
 
 	@Override
 	public int hashCode() {
