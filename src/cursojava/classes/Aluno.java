@@ -149,17 +149,17 @@ public class Aluno {
 
 	}
 
-	/* Este metodo usa String, verifica se o aluno está aprovado ou reprovado */
+	/* Este metodo usa String, verifica se o aluno esta aprovado ou reprovado */
 	public String getAlunoAprovado2() {
 		double media = this.getMediaNota();
 		if (media >= 50) {
 			if (media >= 70) {
-				return "Aluno está aprovado!";
+				return "Aluno esta aprovado!";
 			} else {
-				return "Aluno está em recuperação!";
+				return "Aluno esta em recuperacao!";
 			}
 		} else {
-			return "Aluno está reprovado :(";
+			return "Aluno esta reprovado :(";
 		}
 
 	}

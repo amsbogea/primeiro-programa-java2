@@ -2,7 +2,7 @@ package cursojava.classes;
 
 import java.util.Objects;
 
-/* Essa classe disciplina servirá para todos os objetos e instancias de notas e matérias */
+/* Essa classe disciplina servira para todos os objetos e instancias de notas e materias */
 public class Disciplina {
 
 	private double nota;
